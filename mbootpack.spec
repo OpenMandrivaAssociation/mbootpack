@@ -6,7 +6,6 @@ License:	BSD
 Group:		System/Kernel and hardware
 URL:		http://www.tjd.phlegethon.org/software/#mbootpack
 Source:	http://www.tjd.phlegethon.org/software/%{name}-%{version}.tar.bz2
-Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 This is a tool that takes a multiboot kernel and modules (e.g. a Xen VMM, linux
