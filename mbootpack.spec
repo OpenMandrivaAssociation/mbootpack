@@ -4,6 +4,7 @@ Version:	0.4a
 Release:	%mkrel 1
 License:	BSD 
 Group:		System/Kernel and hardware
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		http://www.tjd.phlegethon.org/software/#mbootpack
 Source:	http://www.tjd.phlegethon.org/software/%{name}-%{version}.tar.bz2
 
