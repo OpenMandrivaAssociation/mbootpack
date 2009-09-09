@@ -1,7 +1,7 @@
 Summary:	Turns a multiboot kernel and modules (eg Xen) into a single file
 Name:		mbootpack
 Version:	0.4a
-Release:	%mkrel 3
+Release:	%mkrel 4
 License:	BSD 
 Group:		System/Kernel and hardware
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
