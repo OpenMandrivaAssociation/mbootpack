@@ -8,6 +8,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		http://www.tjd.phlegethon.org/software/#mbootpack
 Source:	http://www.tjd.phlegethon.org/software/%{name}-%{version}.tar.bz2
 Patch0:	mbootpack-0.4a-fix-build-new-kernel-headers.patch
+Patch1:	mbootpack-0.4a-x86_64-build-fix.patch
 
 %description
 This is a tool that takes a multiboot kernel and modules (e.g. a Xen VMM, linux
@@ -19,6 +20,7 @@ much anything except GRUB and SYSLINUX).
 %prep
 %setup -q
 %patch0 -p1 -b .fix-build-new-kernel-headers
+%patch1 -p1 -b .x86_64-build-fix
 
 %build
 CFLAGS="%{optflags} -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE"
