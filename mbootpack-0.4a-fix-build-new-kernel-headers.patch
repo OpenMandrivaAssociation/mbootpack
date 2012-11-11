@@ -1,0 +1,22 @@
+diff -p -up mbootpack-0.4a/buildimage.c.orig mbootpack-0.4a/buildimage.c
+--- mbootpack-0.4a/buildimage.c.orig	2009-10-07 17:49:14.000000000 -0300
++++ mbootpack-0.4a/buildimage.c	2009-10-07 17:49:22.000000000 -0300
+@@ -38,7 +38,6 @@
+ #include <sys/types.h>
+ #include <sys/stat.h>
+ #include <sys/mman.h>
+-#include <asm/page.h>
+ 
+ #include "mbootpack.h"
+ #include "mb_header.h"
+diff -p -up mbootpack-0.4a/mbootpack.c.orig mbootpack-0.4a/mbootpack.c
+--- mbootpack-0.4a/mbootpack.c.orig	2009-10-07 17:48:26.000000000 -0300
++++ mbootpack-0.4a/mbootpack.c	2009-10-07 17:48:57.000000000 -0300
+@@ -42,7 +42,6 @@
+ #include <sys/types.h>
+ #include <sys/stat.h>
+ #include <sys/mman.h>
+-#include <asm/page.h>
+ 
+ /* From GNU GRUB */
+ #include "mb_header.h"
