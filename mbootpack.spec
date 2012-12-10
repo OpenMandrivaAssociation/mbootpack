@@ -41,3 +41,26 @@ rm -rf %{buildroot}
 
 
 
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 0.4a-6mdv2011.0
++ Revision: 620305
+- the mass rebuild of 2010.0 packages
+
+* Thu Oct 08 2009 Herton Ronaldo Krzesinski <herton@mandriva.com.br> 0.4a-5mdv2010.0
++ Revision: 456129
+- Fix build on x86_64.
+- Fix build with newer kernel headers (#53666).
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - rebuild
+    - fix no-buildroot-tag
+
+* Mon Dec 17 2007 Thierry Vignaud <tv@mandriva.org> 0.4a-1mdv2008.1
++ Revision: 129795
+- kill re-definition of %%buildroot on Pixel's request
+
+
+(none)
