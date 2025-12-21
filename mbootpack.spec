@@ -10,6 +10,7 @@ Source:	http://www.tjd.phlegethon.org/software/%{name}-%{version}.tar.bz2
 Patch0:	mbootpack-0.4a-fix-build-new-kernel-headers.patch
 Patch1:	mbootpack-0.4a-x86_64-build-fix.patch
 
+BuildRequires:	make
 %description
 This is a tool that takes a multiboot kernel and modules (e.g. a Xen VMM, linux
 kernel and initrd), and packages them up as a single file that looks like a
